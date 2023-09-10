@@ -1,0 +1,17 @@
+import './post.css'
+export default function Post({post}){
+console.log(post)
+//jehetu object ar destructure karsi so age pore dile kisu jai asena 
+    const {title, body, id, userId} = post;
+
+return(
+    <div className='post'>
+        <h5>Title:{title}</h5>
+        <p><small>userId:{userId}</small></p>
+        <p><small>postId:{id}</small></p>
+        <p>Body:{body}</p>   
+    </div>
+)
+
+
+}
